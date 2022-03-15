@@ -13,13 +13,11 @@ function Chutar() {
   if (contador < 2) {
     if (valorChute === numeroSecreto) {
       elementoResultado.innerHTML = "VOCÊ ACERTOU!";
-    
     } else if (valorChute > 10 || valorChute < 0) {
-      
       elementoResultado.innerHTML = "DIGITE UM NÚMERO DE 0 A 10!";
     } else if (valorChute > numeroSecreto) {
       elementoResultado.innerHTML = "HMMM... TENTE UM NÚMERO MENOR!";
-    
+
       tentativas = tentativas - 1;
     } else if (valorChute < numeroSecreto) {
       elementoResultado.innerHTML = "HMMM... TENTE UM NÚMERO MAIOR!";
@@ -46,4 +44,3 @@ function Resetar() {
   elementoTentativasRestantes.innerHTML = "";
   valor.value = "";
 }
-
